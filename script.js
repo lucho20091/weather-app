@@ -1,5 +1,4 @@
 const key = "f27ce85670a99a4166190adb76e403ba"
-const goFS = document.getElementById("goFS");
 const fullScreenElem = document.querySelector("#full-screen")
 const coords = JSON.parse(localStorage.getItem("coords"));
 const city = document.getElementById("city");
@@ -55,24 +54,11 @@ function getLocation(){
          lat: position.coords.latitude.toFixed(2),
          lon: position.coords.longitude.toFixed(2)
       }))
+      window.location.reload()
    })
 }
 
 // getLocation()
-
-// handling the full screen btn
-goFS.addEventListener("click", function() {
-    const elem = document.documentElement;
-    if (!document.fullscreenElement) {
-       if (elem.requestFullscreen) {
-          elem.requestFullscreen();
-       }
-    } else {
-       if (document.exitFullscreen) {
-          document.exitFullscreen();
-       }
-    }
- }, false);
 
 //  setting the screen height dinamically
 function setFullScreen(){
