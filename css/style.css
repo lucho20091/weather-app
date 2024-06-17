@@ -152,7 +152,7 @@ body{
 @media (max-width: 500px){
     body{
         place-items: start;
-        height: 100%;
+        height: 100vh;
     }
     .container{
         height: 100%;
