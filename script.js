@@ -1,6 +1,6 @@
 const key = "f27ce85670a99a4166190adb76e403ba"
 const goFS = document.getElementById("goFS");
-const fullScreenElem = document.querySelector("#fullScreen")
+const fullScreenElem = document.querySelector("#full-screen")
 
 
 // fetching the data
@@ -32,7 +32,9 @@ goFS.addEventListener("click", function() {
 
 //  setting the screen height dinamically
 function setFullScreen(){
-   fullScreenElement.style.height = window.innerHeight + "px";
+   if (window.innerHeight < 700){
+      fullScreenElem.style.height = window.innerHeight + "px";
+   }
 }
 
 window.addEventListener('resize', setFullScreen);
