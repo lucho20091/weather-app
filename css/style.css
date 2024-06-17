@@ -133,3 +133,14 @@ body{
 .bottom-end button:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0,0,0,0.5)
 }
+/* FullScreen BTN */
+.goFS{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(72, 49, 157, 1);
+    color: #FFF;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+}

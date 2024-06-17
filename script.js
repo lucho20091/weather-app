@@ -1,5 +1,5 @@
-console.log("hello world1")
 const key = "f27ce85670a99a4166190adb76e403ba"
+const goFS = document.getElementById("goFS");
 
 async function getWeather(){
     try {
@@ -13,10 +13,17 @@ async function getWeather(){
 
 getWeather()
 
-var goFS = document.getElementById("goFS");
-  goFS.addEventListener("click", function() {
-      
-   const elem = document.documentElement;
-   if (elem.requestFullscreen) {elem.requestFullscreen()}
-   
-  }, false);
+
+goFS.addEventListener("click", function() {
+    const elem = document.documentElement;
+    
+    if (!document.fullscreenElement) {
+       if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+       }
+    } else {
+       if (document.exitFullscreen) {
+          document.exitFullscreen();
+       }
+    }
+ }, false);
