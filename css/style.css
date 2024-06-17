@@ -148,7 +148,6 @@ body{
 @media (max-width: 500px){
     body{
         place-items: start;
-        height: 90vh;
     }
     .container{
         height: 90vh;
