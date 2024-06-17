@@ -16,7 +16,6 @@ async function getWeather(){
 }
 
 getWeather()
-console.log(coords);
 
 // get the location
 function getLocation(){
