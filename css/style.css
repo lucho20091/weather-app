@@ -135,7 +135,11 @@ body{
 }
 /* FullScreen BTN */
 .goFS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    padding: 0.5em 0.8em;
     top: 0;
     right: 0;
     background: rgba(72, 49, 157, 1);
