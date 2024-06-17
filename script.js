@@ -21,11 +21,13 @@ goFS.addEventListener("click", function() {
        if (elem.requestFullscreen) {
           elem.requestFullscreen();
           container.style.height = "100vh"
+          body.style.height = "100vh"
        }
     } else {
        if (document.exitFullscreen) {
           document.exitFullscreen();
-          container.style.height = "96vh"
+          container.style.height = "90vh"
+           body.style.height = "90vh"
        }
     }
  }, false);

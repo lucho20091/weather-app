@@ -148,9 +148,10 @@ body{
 @media (max-width: 500px){
     body{
         place-items: start;
+        height: 90vh;
     }
     .container{
-        height: 96vh;
+        height: 90vh;
         width: 100vw;
     }
     .mid-img{
