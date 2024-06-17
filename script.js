@@ -1,5 +1,6 @@
 const key = "f27ce85670a99a4166190adb76e403ba"
 const goFS = document.getElementById("goFS");
+const container = document.querySelectorAll(".container")
 
 async function getWeather(){
     try {
@@ -19,10 +20,12 @@ goFS.addEventListener("click", function() {
     if (!document.fullscreenElement) {
        if (elem.requestFullscreen) {
           elem.requestFullscreen();
+          container.style.height = "100vh"
        }
     } else {
        if (document.exitFullscreen) {
           document.exitFullscreen();
+          container.style.height = "96vh"
        }
     }
  }, false);
