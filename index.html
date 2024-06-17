@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="top">
+            <h1>Montreal</h1>
+            <h2>19°</h2>
+            <p class="top-p gray">Mostly Clear</p>
+            <p class="top-p">H:24° L:18°</p>
+        </div>
+        <div class="mid">
+            <img src="./assets/House.png" class="mid-img" alt="house">
+        </div>
+        <div class="bottom">
+            <div class="bottom-first">
+                <p>Hourly Forecast</p>
+                <p>Weekly Forecast</p>
+            </div>
+            <div class="bottom-mid">
+                <div class="bottom-mid-pill">
+                    <p>12 AM</p>
+                    <p>30%</p>
+                    <p class="bigger-p">19°</p>
+                </div>
+                <div class="bottom-mid-pill">
+                    <p>Now</p>
+                    <p>30%</p>
+                    <p class="bigger-p">19°</p>
+                </div>  
+                <div class="bottom-mid-pill">
+                    <p>2 AM</p>
+                    <p>30%</p>
+                    <p class="bigger-p">19°</p>
+                </div>  
+                <div class="bottom-mid-pill">
+                    <p>3 AM</p>
+                    <p>30%</p>
+                    <p class="bigger-p">19°</p>
+                </div>  
+                <div class="bottom-mid-pill">
+                    <p>4 AM</p>
+                    <p>30%</p>
+                    <p class="bigger-p">19°</p>
+                </div>
+            </div>
+            <div class="bottom-end">
+                <button>+</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
