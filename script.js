@@ -3,9 +3,6 @@ const goFS = document.getElementById("goFS");
 const fullScreenElem = document.querySelector("#full-screen")
 const coords = JSON.parse(localStorage.getItem("coords"));
 
-console.log(coords.lat)
-
-
 // fetching the data
 async function getWeather(){
     try {
