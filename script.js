@@ -27,7 +27,7 @@ function getLocation(){
    })
 }
 
-getLocation()
+// getLocation()
 
 // handling the full screen btn
 goFS.addEventListener("click", function() {
