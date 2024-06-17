@@ -20,12 +20,10 @@ goFS.addEventListener("click", function() {
     if (!document.fullscreenElement) {
        if (elem.requestFullscreen) {
           elem.requestFullscreen();
-          container.style.height = "100vh"
        }
     } else {
        if (document.exitFullscreen) {
           document.exitFullscreen();
-          container.style.height = "90vh"
        }
     }
  }, false);
