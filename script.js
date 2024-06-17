@@ -16,7 +16,6 @@ getWeather()
 
 goFS.addEventListener("click", function() {
     const elem = document.documentElement;
-    
     if (!document.fullscreenElement) {
        if (elem.requestFullscreen) {
           elem.requestFullscreen();
