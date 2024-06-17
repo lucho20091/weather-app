@@ -9,9 +9,10 @@ console.log(coords.lat)
 // fetching the data
 async function getWeather(){
     try {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${key}`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&units=metric&appid=${key}`)
     const data = await response.json()
     console.log(data)
+    console.log(data.name, data.sys.country)
     } catch(e){
         console.log(e)
     }
