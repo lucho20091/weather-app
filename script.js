@@ -34,6 +34,8 @@ goFS.addEventListener("click", function() {
 function setFullScreen(){
    if (window.innerHeight < 700){
       fullScreenElem.style.height = window.innerHeight + "px";
+   } else {
+      fullScreenElem.style.height = "844px"
    }
 }
 
