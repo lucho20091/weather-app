@@ -2,6 +2,10 @@ const key = "f27ce85670a99a4166190adb76e403ba"
 const goFS = document.getElementById("goFS");
 const fullScreenElem = document.querySelector("#full-screen")
 const coords = JSON.parse(localStorage.getItem("coords"));
+const city = document.getElementById("city");
+const temp = document.getElementById("temp");
+const weather = document.getElementById("weather");
+const tempMinMax = document.getElementById("temp-max-min");
 
 // fetching the data
 async function getWeather(){
@@ -10,12 +14,21 @@ async function getWeather(){
     const data = await response.json()
     console.log(data)
     console.log(data.name, data.sys.country)
+    renderHTML(data)
     } catch(e){
         console.log(e)
     }
 }
 
 getWeather()
+
+function renderHTML(data){
+   city.textContent = data.name
+   temp.textContent = `${Math.floor(data.main.temp)}°`
+   weather.textContent = data.weather[0].description
+   tempMinMax.textContent = `H: ${Math.floor(data.main.temp_max)}° L: ${Math.floor(data.main.temp_min)}°`
+}
+
 
 // get the location
 function getLocation(){
